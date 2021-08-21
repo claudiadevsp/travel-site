@@ -44,11 +44,6 @@ export const Description = styled.p`
         margin-left: 80px;
     }
 
-    @media screen and (max-width: 562px) {
-        padding: 10px 0 0 0;
-        margin-top: -20px;
-    }
-
     @media screen and (min-width: 280px) and (max-width: 759px) {     
         margin-left: 40px;
     }
