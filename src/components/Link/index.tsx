@@ -1,13 +1,13 @@
 import { Wrapwer } from './styles'
 import { ReactNode } from 'react'
 
-type NavigationLinkProps = {
+type LinkProps = {
     children: ReactNode;
     source: string;
     title: string;
 }
 
-const NavigationLink = (props: NavigationLinkProps) => {
+const Link = (props: LinkProps) => {
   const { children, source, title } = props
 
   return (
@@ -20,4 +20,4 @@ const NavigationLink = (props: NavigationLinkProps) => {
   )
 }
 
-export { NavigationLink }
+export { Link }
