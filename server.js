@@ -12,10 +12,9 @@ app.use('/',
         ))
 )
 
-app.listen(process.env.port || 3000, (error) => {
-    if (error) {
-        console.log(error)
-    } else {
-        console.log('ok')
-    }
-})
+const server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+const server_host = process.env.YOUR_HOST || '0.0.0.0';
+app.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
+});
+
